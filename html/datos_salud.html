@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Salud - Institución Deportiva</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Datos de Salud</h1>
+        <form id="datosSaludForm">
+            <label for="mutualista">Mutualista:</label>
+            <input type="text" id="mutualista" name="mutualista" required><br><br>
+            <label for="emergenciaMedica">Emergencia Médica:</label>
+            <input type="text" id="emergenciaMedica" name="emergenciaMedica" required><br><br>
+            <label for="enfermedad">Enfermedad o condición hereditaria:</label>
+            <input type="text" id="enfermedad" name="enfermedad" required><br><br>
+            <label for="aptitudFisica">Aptitud Física:</label>
+            <input type="file" id="aptitudFisica" name="aptitudFisica" accept=".pdf,.jpg,.jpeg,.png" onchange="previewFile()"><br><br>
+            <div id="previewContainer" class="hidden">
+                <iframe id="preview"></iframe><br><br>
+                <a id="downloadLink" class="button" download>Descargar Aptitud Física</a>
+                <a id="whatsappLink" class="button" href="#" target="_blank">Compartir por WhatsApp</a>
+            </div>
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+        <a href="/index.html" class="volver-btn">Volver a Inicio</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
