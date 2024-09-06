@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Menú Desplegable</title>
+	<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <div class="contador-container"> <!--contador de socios  -->
+		<p id="contadorSocios">Hoy somos 0 socios en Universal!</p>
+	</div>
+	
+
+	<nav>
+		<ul class="menu-horizontal">
+			<li><a href="/index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+			<li>
+				<a href="#">Socio</a>
+				<ul class="menu-vertical">
+					<li><a href="/html/inscripcion.html">Inscripción</a></li>
+					<li><a href="/html/cuota.html">Pago de Cuota</a></li>
+					<li><a href="#">veremos para que</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Buscador</a>
+				<ul class="menu-vertical">
+					<li><a href="#" id="buscarSocio"># Socio</a></li>
+					<li><a href="#" id="buscarCedula">Cédula</a></li>
+				</ul>
+			</li>
+			<li><a href="/html/contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+
+	<!-- Formulario para buscar por número de socio -->
+	<div id="buscadorSocio" class="buscador" style="display:none;">
+		<h2>Buscar Socio</h2>
+		<form>
+			<label for="numeroSocio">Coloque aquí el número de socio:</label>
+			<input type="text" id="numeroSocio" name="numeroSocio" placeholder="Número de Socio">
+		</form>
+	</div>
+
+	<!-- Formulario para buscar por cédula -->
+	<div id="buscadorCedula" class="buscador" style="display:none;">
+		<h2>Buscar por Cédula</h2>
+		<form>
+			<label for="cedula">Coloque aquí la cédula:</label>
+			<input type="text" id="cedula" name="cedula" placeholder="Número de Cédula">
+		</form>
+	</div>
+
+	<script src="/javascript/contador.js"></script>
+</body>
+</html>
+
