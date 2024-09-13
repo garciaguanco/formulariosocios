@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: ;
+    background-image: url(../images/bg4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -45,6 +45,7 @@ main{
     transition: all 500ms;
 }
 
+
 .caja__trasera div p,
 .caja__trasera button{
     margin-top: 30px;
@@ -76,7 +77,6 @@ main{
     background: #fff;
     color: green;
 }
-
 
 /*Formularios*/
 
@@ -130,6 +130,9 @@ main{
     outline: none;
 }
 
+
+
+
 .formulario__login{
     opacity: 1;
     display: block;
@@ -140,9 +143,6 @@ main{
 
 
 
-
-
-/*smartphone*/
 @media screen and (max-width: 850px){
 
     main{
@@ -175,260 +175,329 @@ main{
     }
 }
 
-/*Nabvar*/
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Open Sans';
-}
-body{
-	background-image: url(img/fondo.jpg);
-	background-size: cover;
-}
-nav{
-	max-width: 900px;
-	margin: auto;
-	background-color: #333;
-	font-size: 20px;
-	margin-top: 50px;
-}
-.menu-horizontal{
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-}
-.menu-horizontal > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: white;
-	text-decoration: none;
-}
-.menu-horizontal > li:hover{
-	background-color: red;
-}
-.menu-vertical{
-	position: absolute;
-	display: none;
-	list-style: none;
-	width: 200px;
-	background-color: rgba(0, 0, 0, .5);
-}
-.menu-horizontal li:hover .menu-vertical{
-	display: block;
-}
-.menu-vertical li:hover{
-	background-color: black;
-}
-
-.menu-vertical li a{
-	display: block;
-	color: white;
-	text-decoration: none;
-	padding: 15px 15px 15px 20px;
-}
-
-#html{
-	margin: auto;
-	padding: 20px;
-	max-width: 900px;
-	background: white;
-
-}
-
-.buscador {
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
-}
-
-.buscador h2 {
-    margin-bottom: 15px;
-}
-
-.buscador input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.buscador input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.buscador input[type="submit"]:hover {
-    background-color: #575757;
-}
-
-/* Inscripcion */
-
-/* Estilo general */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: white;
-    background-color: green;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px white;
-    font-size: 24px;
-}
-
-/* Formulario */
-
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-legend {
-    font-weight: bold;
-    color: white;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-input[type="text"],
-input[type="date"],
-input[type="tel"],
-input[type="email"],
-input[type="file"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-input[type="submit"],
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-input[type="submit"]:hover,
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilo para el campo de texto de enfermedades */
-textarea {
-    height: 100px;
-    resize: none;
-}
-
-/* Estilo del botón de "Volver al Inicio" */
-button {
-    background-color: #6c757d;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #5a6268;
-}
-
-/* Estilo para la barra de navegación */
+/* Estilos para la barra de navegación */
 nav {
-    background-color: green; /* Fondo verde para la barra */
-    padding: 10px;
-}
-
-/* Estilo para los enlaces dentro del menú */
-nav ul.menu-horizontal li a {
-    color: white; /* Letras blancas */
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-}
-
-/* Cambiar el color de fondo de los enlaces cuando el mouse pasa sobre ellos */
-nav ul.menu-horizontal li a:hover {
-    background-color: darkgreen; /* Color de fondo cuando pasas el mouse */
-}
-
-/* Estilo para el menú desplegable */
-nav ul.menu-vertical {
-    display: none; /* Oculto por defecto */
     background-color: green;
-    position: absolute;
+    display: flex;
+    justify-content: center; /* Centra el menú horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 60px; /* Ajusta la altura de la barra si es necesario */
+}
+
+nav ul.menu-horizontal {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul.menu-horizontal li {
+    display: inline-block;
+    position: relative; /* Para el menú desplegable */
+}
+
+nav ul.menu-horizontal li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilos para el menú desplegable */
+nav ul.menu-horizontal li ul.menu-vertical {
+    display: none;
+    position: absolute;
+    top: 100%; /* Posiciona el submenú debajo del menú principal */
+    left: 0;
+    background-color: green;
     padding: 0;
 }
 
-/* Mostrar el menú desplegable cuando el mouse está sobre el elemento principal */
 nav ul.menu-horizontal li:hover ul.menu-vertical {
     display: block;
 }
 
-/* Estilo para los enlaces del menú desplegable */
-nav ul.menu-vertical li a {
-    color: white; /* Letras blancas */
-    padding: 10px 20px;
+nav ul.menu-horizontal li ul.menu-vertical li a {
     display: block;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
 }
 
-/* Estilos del contenedor del contador */
-.contador-container {
+nav ul.menu-horizontal li a:hover, 
+nav ul.menu-horizontal li ul.menu-vertical li a:hover {
+    background-color: #006400; /* Verde más oscuro para el hover */
+}
+
+
+/* Estilos generales para inscripcion */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+h1 {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
     text-align: center;
-    background-color: #4CAF50; /* Verde moderno */
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: white;
     padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
     border-radius: 10px;
-    margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo del texto dentro del contador */
-.contador-container p {
-    color: white;
-    font-size: 24px;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
+/* Estilos para los fieldset */
+fieldset {
+    border: 1px solid #4CAF50;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
+
+/* Estilos para los legend */
+legend {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Estilos para las etiquetas de texto */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilos para los botones */
+input[type="submit"],
+button {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Hover para los botones */
+input[type="submit"]:hover,
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para los radios y checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Centrar el contenido del form y los títulos */
+form,
+h1 {
+    text-align: center;
+}
+
+/* Estilo para las imágenes previas (si las usas en formularios adicionales) */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Calendario de actividades */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: 100px repeat(6, 1fr); /* 1 columna para horas, 6 para los días */
+    grid-template-rows: 50px repeat(5, 1fr); /* 1 fila para días, el resto para horas */
+    gap: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.corner {
+    background-color: white;
+}
+
+.time-label {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.day-label {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.activity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+.lightblue {
+    background-color: #AFCDEA;
+}
+
+.peach {
+    background-color: #F9D3B4;
+}
+
+.green {
+    background-color: #C7E1BE;
+}
+
+.yellow {
+    background-color: #FFEB9C;
+}
+
+.gray {
+    background-color: #C1C1C1;
+}
+
+
+/*socio*/
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 1.5em;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Estilo para autorización de fotos */
+.auth-section {
+    margin-top: 20px;
+}
+
+.auth-option {
+    display: inline-block;
+    width: 45%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.auth-option.si {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.auth-option.no {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Estilo para las imágenes de documentos */
+.document-section {
+    margin-top: 20px;
+}
+
+.document-section img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    display: block;
+    margin: 20px 0;
+}
+
+.links-section a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.links-section a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para las observaciones */
+.observations-section {
+    margin-top: 30px;
+}
+
+.observations-section p {
+    font-size: 1.2em;
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+}
+
+
 
 
 

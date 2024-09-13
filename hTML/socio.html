@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .autorizacion {
+            padding: 10px;
+            color: white;
+            width: 100px;
+            text-align: center;
+        }
+        .si { background-color: green; }
+        .no { background-color: red; }
+        .links {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Datos del Socio</h2>
+
+<!-- Mostrar autorización -->
+<div>
+    <h3>Autorización para Fotografías</h3>
+    <div class="autorizacion <?php echo $_GET['autorizacion']; ?>">
+        <?php echo ucfirst($_GET['autorizacion']); ?>
+    </div>
+</div>
+
+<!-- Mostrar imagen de la cédula -->
+<div>
+    <h3>Cédula</h3>
+    <img src="<?php echo $_GET['cedula']; ?>" alt="Cédula" width="150">
+</div>
+
+<!-- Links para descargar archivos -->
+<div>
+    <h3>Documentación</h3>
+    <p class="links"><a href="<?php echo $_GET['cedula']; ?>">Cédula</a></p>
+    <p class="links"><a href="<?php echo $_GET['aptitud']; ?>">Aptitud Física</a></p>
+    <p class="links"><a href="<?php echo $_GET['vacunas']; ?>">Vacunas</a></p>
+</div>
+
+<!-- Mostrar observaciones -->
+<div>
+    <h3>Observaciones</h3>
+    <p><?php echo $_GET['observaciones']; ?></p>
+</div>
+
+</body>
+</html>
